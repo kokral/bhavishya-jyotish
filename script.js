@@ -1,3 +1,27 @@
-const toggle=document.querySelector('.nav-toggle');const menu=document.querySelector('.menu');if(toggle&&menu){toggle.addEventListener('click',()=>menu.classList.toggle('open'));}
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const href=a.getAttribute('href');if(href.length>1){e.preventDefault();document.querySelector(href).scrollIntoView({behavior:'smooth'});menu?.classList.remove('open');}});});
-document.getElementById('year').textContent=new Date().getFullYear();
+const translations = {
+    en: {
+        home: "Home",
+        about: "About",
+        blogs: "Blogs",
+        privacy: "Privacy",
+        terms: "Terms",
+        welcome: "Welcome to Bhavishya Jyotish",
+        tagline: "Your trusted partner in Astrology, Numerology, and Horoscope Predictions."
+    },
+    hi: {
+        home: "होम",
+        about: "हमारे बारे में",
+        blogs: "ब्लॉग्स",
+        privacy: "गोपनीयता",
+        terms: "नियम",
+        welcome: "भविष्य ज्योतिष में आपका स्वागत है",
+        tagline: "ज्योतिष, अंक ज्योतिष और राशिफल में आपका भरोसेमंद साथी।"
+    }
+};
+
+function setLanguage(lang) {
+    document.querySelectorAll("[data-lang]").forEach(el => {
+        const key = el.getAttribute("data-lang");
+        el.textContent = translations[lang][key] || el.textContent;
+    });
+}

@@ -1,224 +1,41 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bhavishya Jyotish – सटीक वैदिक ज्योतिष और मार्गदर्शन</title>
-  <meta name="description" content="Bhavishya Jyotish: वैदिक ज्योतिष, जन्म कुंडली, मिलान, ग्रह दोष निवारण, करियर व व्यवसाय मार्गदर्शन। ऑनलाइन परामर्श और PDF रिपोर्ट।">
-  <meta name="theme-color" content="#5B2AE6">
-  <meta property="og:title" content="Bhavishya Jyotish">
-  <meta property="og:description" content="सटीक वैदिक ज्योतिष और भविष्यवाणी सेवाएँ">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-card.svg">
-  <meta property="og:url" content="/">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavishya Jyotish</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container">
-      <div class="badge">🎉 न्यू यूज़र्स के लिए 10 मिनट FREE — कोड: <strong>BHAVISHYA10</strong></div>
-    </div>
-  </header>
-
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#home">
-        <img src="assets/logo.svg" alt="Bhavishya Jyotish logo">
-        <span>Bhavishya Jyotish</span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <ul class="menu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#whyus">Why Us</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="cta-group">
-        <a class="btn ghost" href="#contact">Login</a>
-        <a class="btn primary" href="#booking">Book Now</a>
-      </div>
-    </div>
-  </nav>
-
-  <main id="home">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container grid2">
-        <div>
-          <h1>सितारों से <span class="accent">साफ़</span> रास्ता — आपके जीवन का <span class="accent">सही मार्गदर्शन</span></h1>
-          <p class="lede">Vedic & KP Astrology • Kundli • Match‑Making • Career • Finance • Health • Muhurat. अनुभवी आचार्यों से भरोसेमंद परामर्श।</p>
-          <div class="actions">
-            <a class="btn primary" href="#booking">शुरू करें – 10 मिनट फ्री</a>
-            <a class="btn ghost" href="#services">सेवाएँ देखें</a>
-          </div>
-          <ul class="stats">
-            <li>50k+ Happy Clients</li>
-            <li>4.9★ Rated</li>
-            <li>24×7 Support</li>
-          </ul>
+    <header>
+        <h1>Bhavishya Jyotish</h1>
+        <nav>
+            <a href="index.html" data-lang="home">Home</a>
+            <a href="about.html" data-lang="about">About</a>
+            <a href="blogs.html" data-lang="blogs">Blogs</a>
+            <a href="privacy.html" data-lang="privacy">Privacy</a>
+            <a href="terms.html" data-lang="terms">Terms</a>
+        </nav>
+        <div class="lang-toggle">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('hi')">हिंदी</button>
         </div>
-        <div class="hero-card">
-          <div class="card-grid">
-            <div class="card"><h3>कुंडली</h3><p>Birth Chart</p></div>
-            <div class="card"><h3>गुण मिलान</h3><p>Match‑Making</p></div>
-            <div class="card"><h3>कैरियर</h3><p>Career</p></div>
-            <div class="card"><h3>वित्त</h3><p>Finance</p></div>
-            <div class="card"><h3>स्वास्थ्य</h3><p>Health</p></div>
-            <div class="card"><h3>मुहूर्त</h3><p>Muhurat</p></div>
-          </div>
-          <div class="banner">अभी स्लॉट बुक करें और मुफ्त 10 मिनट पाएं</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Us -->
-    <section id="whyus" class="section alt">
-      <div class="container">
-        <h2>क्यों चुनें <span class="accent-text">Bhavishya Jyotish</span>?</h2>
-        <div class="grid3 cards">
-          <div class="panel"><h3>प्रमाणित आचार्य</h3><p>5+ वर्ष अनुभव वाले वैदिक ज्योतिषाचार्य।</p></div>
-          <div class="panel"><h3>साफ़ प्राइसिंग</h3><p>प्रति मिनट दर, कोई छुपा चार्ज नहीं।</p></div>
-          <div class="panel"><h3>बहुभाषी सपोर्ट</h3><p>हिंदी, इंग्लिश, मराठी, गुजराती।</p></div>
-          <div class="panel"><h3>गोपनीयता</h3><p>DPDP अनुरूप डेटा सुरक्षा और प्राइवेसी।</p></div>
-          <div class="panel"><h3>24×7 उपलब्ध</h3><p>जब भी चाहें—चैट/कॉल/वीडियो।</p></div>
-          <div class="panel"><h3>रिपोर्ट्स</h3><p>कस्टम PDF कुंडली और उपाय रिपोर्ट।</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="section">
-      <div class="container">
-        <h2>हमारी सेवाएँ</h2>
-        <p class="sub">व्यक्तिगत, व्यवसायिक और पारिवारिक निर्णयों के लिए वैज्ञानिक दृष्टि के साथ वैदिक मार्गदर्शन।</p>
-        <div class="grid3">
-          <div class="service">
-            <h3>कुंडली विश्लेषण</h3>
-            <p class="price">₹499 से</p>
-            <ul>
-              <li>जन्मपत्री + दशा</li>
-              <li>उपाय और रेमेडीज</li>
-              <li>30‑मिनट कॉल</li>
-            </ul>
-            <a class="btn primary block" href="#booking">बुक करें</a>
-          </div>
-          <div class="service">
-            <h3>मैच‑मेकिंग</h3>
-            <p class="price">₹699 से</p>
-            <ul>
-              <li>गुण मिलान रिपोर्ट</li>
-              <li>दोष निवारण सुझाव</li>
-              <li>PDF रिपोर्ट</li>
-            </ul>
-            <a class="btn primary block" href="#booking">बुक करें</a>
-          </div>
-          <div class="service">
-            <h3>वार्षिक भविष्यफल</h3>
-            <p class="price">₹899 से</p>
-            <ul>
-              <li>ट्रांज़िट विश्लेषण</li>
-              <li>कैरियर/फाइनैंस/हेल्थ</li>
-              <li>ई‑मेल रिपोर्ट</li>
-            </ul>
-            <a class="btn primary block" href="#booking">बुक करें</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="section alt">
-      <div class="container">
-        <h2>यूज़र रिव्यू</h2>
-        <div class="grid3">
-          <blockquote class="quote">“कैरियर के लिए मार्गदर्शन बेहद उपयोगी। रिपोर्ट प्रोफेशनल थी।”<cite>— Ritika, Pune</cite></blockquote>
-          <blockquote class="quote">“मैच‑मेकिंग रिपोर्ट ने हमें क्लियरिटी दी — धन्यवाद!”<cite>— Aman, Delhi</cite></blockquote>
-          <blockquote class="quote">“फीस पारदर्शी, सपोर्ट तेज़ और सलाह व्यावहारिक।”<cite>— Hitesh, Surat</cite></blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing CTA -->
-    <section id="pricing" class="section cta">
-      <div class="container cta-inner">
-        <div>
-          <h3>साफ़ और सरल प्राइसिंग</h3>
-          <p>चैट: ₹15/मिनट • कॉल: ₹25/मिनट • वीडियो: ₹45/मिनट</p>
-          <p>पहली बार वालों के लिए 10 मिनट मुफ्त। किसी भी समय रद्द करें।</p>
-        </div>
-        <div class="cta-buttons">
-          <a class="btn dark" href="#booking">अभी शुरू करें</a>
-          <a class="btn ghost" href="#contact">डेमो माँगें</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container grid2">
-        <div>
-          <h2>संपर्क करें</h2>
-          <p class="sub">प्रश्न, बुकिंग या पार्टनरशिप के लिए हमें लिखें।</p>
-          <ul class="contact-list">
-            <li>📍 दिल्ली • मुंबई • ऑनलाइन पैन‑इंडिया</li>
-            <li>📞 +91‑98XX‑XXXXXX</li>
-            <li>✉️ hello@bhavishyajyotish.com</li>
-            <li>🕒 24×7 चैट सपोर्ट</li>
-          </ul>
-        </div>
-        <form class="form" onsubmit="return false;">
-          <label>आपका नाम<input required placeholder="अपना नाम लिखें"></label>
-          <div class="grid2 gap">
-            <label>ई‑मेल<input type="email" required placeholder="you@email.com"></label>
-            <label>फ़ोन<input placeholder="+91‑"></label>
-          </div>
-          <label>संदेश<textarea rows="4" required placeholder="आपका प्रश्न लिखें…"></textarea></label>
-          <button class="btn primary">संदेश भेजें</button>
-          <p class="form-note">फॉर्म सबमिट करने से आप हमारी Privacy Policy और Terms से सहमत हैं।</p>
+    </header>
+    <main>
+        <h2 data-lang="welcome">Welcome to Bhavishya Jyotish</h2>
+        <p data-lang="tagline">Your trusted partner in Astrology, Numerology, and Horoscope Predictions.</p>
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
         </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container foot-grid">
-      <div>
-        <div class="brand foot-brand"><img src="assets/logo.svg" alt="logo"><span>Bhavishya Jyotish</span></div>
-        <p>Astrology readings are guidance only; outcomes not guaranteed. 18+ users.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Policies</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Refund & Cancellation</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copy">© <span id="year"></span> Bhavishya Jyotish. All rights reserved.</div>
-  </footer>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Bhavishya Jyotish",
-    "url": "",
-    "logo": "assets/logo.svg",
-    "sameAs": []
-  }
-  </script>
-  <script src="script.js"></script>
+        <a href="https://wa.me/919999999999" class="whatsapp">💬 WhatsApp</a>
+        <a href="tel:+919999999999" class="call">📞 Call Us</a>
+    </main>
+    <footer>
+        <p>© 2025 Bhavishya Jyotish</p>
+    </footer>
 </body>
 </html>
